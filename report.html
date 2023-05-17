@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.1.0/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/7.3.0/simple-statistics.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class ="container">
+       <div class="header">
+            <nav>
+            <div class="logo">
+                <h3>Club Health</h3>
+            </div>
+            <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href ="report.html?id=1">Details</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <p>Report Overview</p>
+        </div>
+        <div class="main" style="text-align: left;">
+            <div class="brain_profile">
+                <p style="text-align: left; font-size: 19px; padding-left: 10px;">Grey Matters</p>
+                <div class="brain_image">
+                    <img src="images/brain_image.png" alt="" srcset="" style="border-radius: 0 0 25px 25px;">
+                </div>
+           </div>
+           <div class="athlete_profile">
+              <div class="athlete_image">
+                   
+               </div>
+               <div class="desc">
+                     <p>Your brain is normal in appearance on this scan.
+                     No abnormal lesions, tumors, or structural abnormalities are seen.
+                     The ventricular system, sulci, and gyri are all well defined and symmetric.
+                     The brainstem and cerebellum are also normal in appearance</p>
+               </div>
+           </div> 
+    </div>
+    <div class="statistics">
+        <h2>Statistics</h2>
+        <h4>Volume : 0.5</h4>
+        <h4>Normal Range: 0.2L-0.7L</h4>
+    </div>
+      <div class="graph">
+        <p style="text-align: left; padding-left: 50px; font-size: 22px;">Normal Distribution</p>
+        <div class="plot">
+            <svg id="chart"></svg>
+        </div>
+        <p style="text-align: center;">Bell Curve</p>
+      </div>
+      <div class="summary">
+        <h3>Summary</h3>
+        <p>Your brain is normal in appearance on this scan. No abnormal lesions,
+            tumors, or structural abnormalities are seen. The ventricular system, sulci, and gyri are all well defined and symmetric. The brainstem and cerebellum are also normal in appearance</p>
+      </div>
+     
+    </div>
+    
+</body>
+ <script src="report.js"></script>
+</html>
